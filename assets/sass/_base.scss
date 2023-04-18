@@ -1,0 +1,18 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: $primary-font;
+  line-height: 1;
+  color: $gray-dark;
+  max-width: 192rem;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 181rem;
+  margin: 0 auto;
+  padding: 0 1.5rem
+}
