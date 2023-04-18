@@ -121,3 +121,27 @@ body {
   top: -1.6rem;
   right: -1.2rem;
 }
+
+.hero {
+  position: relative;
+}
+.hero-image img {
+  width: inherit;
+}
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.hero-content h2 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+.hero-content .hero-heading {
+  color: #3cb878;
+}

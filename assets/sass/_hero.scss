@@ -1,0 +1,28 @@
+.hero {
+  position: relative;
+
+  &-image {
+    img {
+      width: inherit;
+    }
+  }
+
+  &-content {
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    transform: translateY(-50%);
+
+    h2 {
+      font-size: 6rem;
+      text-transform: uppercase;
+      font-weight: normal;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 4px rgba($color: #000000, $alpha: 0.6);
+    }
+
+    .hero-heading {
+      color: $green;
+    }
+  }
+}
