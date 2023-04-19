@@ -1,0 +1,33 @@
+.feature {
+  margin-bottom: 5rem;
+
+  &-main {
+    @include flex(space-around);
+    text-align: center;
+  }
+
+  &-item {
+    &-img {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2.6rem;
+      img {
+        object-fit: cover;
+      }
+    }
+
+    &-heading {
+      color: $gray-dark;
+      text-transform: uppercase;
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+
+    &-sub-heading {
+      color: #888;
+      font-size: 1.3rem;
+      font-weight: 100;
+    }
+  }
+}
