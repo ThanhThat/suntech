@@ -316,7 +316,54 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 10rem;
 }
 .fashion-list .fashion-item {
   width: 33.3333333333%;
+}
+
+.product-list {
+  margin-bottom: 10rem;
+}
+.product-list-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.product-list-sub-title {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #3cb878;
+  margin: 1rem 0 6rem;
+}
+.product-list .product-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8.6rem 1.6rem;
+}
+.product-list .product-item {
+  width: calc(20% - 1.6rem);
+  position: relative;
+  cursor: pointer;
+}
+.product-list .product-item-name {
+  margin-top: 2.2rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.product-list .product-item-price {
+  color: #3cb878;
+  font-size: 1.8rem;
 }
