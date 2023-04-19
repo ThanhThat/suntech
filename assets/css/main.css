@@ -40,6 +40,23 @@ body {
   padding: 0 1.5rem;
 }
 
+.btn {
+  border: none;
+  cursor: pointer;
+  background-color: #ccc;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn.btn--submit {
+  background-color: #3cb878;
+  color: #ffffff;
+  padding: 1.8rem 2.6rem;
+  margin-left: 1rem;
+  font-size: 1.4rem;
+}
+
 .header-main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -366,4 +383,107 @@ body {
 .product-list .product-item-price {
   color: #3cb878;
   font-size: 1.8rem;
+}
+
+.footer {
+  position: relative;
+}
+.footer-background-left {
+  margin-right: auto;
+  width: 50%;
+  height: 30rem;
+}
+.footer-background-left img {
+  width: 100%;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.footer-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: absolute;
+  bottom: 50%;
+  -webkit-transform: translateY(35%);
+          transform: translateY(35%);
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.footer-column {
+  width: 50%;
+}
+.footer-column-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.footer-heading {
+  color: #ffffff;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.footer-desc {
+  color: #ffffff;
+  font-size: 1.4rem;
+  text-align: center;
+  width: 55%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  line-height: 2;
+}
+.footer-form {
+  text-align: center;
+}
+.footer-form .form-control {
+  padding: 1.8rem 2.6rem;
+  font-size: 1.4rem;
+  color: #9c9c9a;
+  width: 40rem;
+}
+.footer-bottom {
+  height: 5rem;
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.footer-bottom-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0 1rem;
 }

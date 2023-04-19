@@ -17,3 +17,21 @@ body {
   margin: 0 auto;
   padding: 0 1.5rem;
 }
+
+.btn {
+  border: none;
+  cursor: pointer;
+  background-color: #ccc;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.btn.btn--submit {
+  background-color: $green;
+  color: $white;
+  padding: 1.8rem 2.6rem;
+  margin-left: 1rem;
+  font-size: 1.4rem;
+}
