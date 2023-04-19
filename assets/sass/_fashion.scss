@@ -1,5 +1,6 @@
 .fashion-list {
   @include flex();
+  margin-bottom: 10rem;
 
   .fashion-item {
     width: calc(100% / 3);
