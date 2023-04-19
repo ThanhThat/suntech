@@ -29,6 +29,7 @@ body {
   font-family: "Myriad Pro", sans-serif;
   line-height: 1;
   color: #333333;
+  background-color: #fff;
   max-width: 192rem;
   margin: 0 auto;
 }
@@ -260,7 +261,9 @@ body {
 }
 
 .feature {
+  padding: 5rem 0;
   margin-bottom: 5rem;
+  background-color: #f5f6f9;
 }
 .feature-main {
   display: -webkit-box;
@@ -299,4 +302,21 @@ body {
   color: #888;
   font-size: 1.3rem;
   font-weight: 100;
+}
+
+.fashion-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.fashion-list .fashion-item {
+  width: 33.3333333333%;
 }

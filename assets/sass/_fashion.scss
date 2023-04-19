@@ -1,0 +1,7 @@
+.fashion-list {
+  @include flex();
+
+  .fashion-item {
+    width: calc(100% / 3);
+  }
+}

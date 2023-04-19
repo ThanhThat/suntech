@@ -1,5 +1,7 @@
 .feature {
+  padding: 5rem 0;
   margin-bottom: 5rem;
+  background-color: #f5f6f9;
 
   &-main {
     @include flex(space-around);
