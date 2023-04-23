@@ -30,7 +30,7 @@
   &-products {
     flex: 1;
     @include flex(space-between);
-    gap: 0 1.6rem;
+    gap: 3.6rem 1.6rem;
   }
 
   &-item {
@@ -38,8 +38,17 @@
     position: relative;
     cursor: pointer;
 
+    &-image {
+      transition: all 0.25s linear;
+      will-change: opacity;
+    }
+
     &:hover &-feature {
-      animation: moveInLeft 0.5s linear 0s forwards;
+      animation: moveInLeft 0.25s linear 0s forwards;
+    }
+
+    &:hover &-image {
+      opacity: 0.8;
     }
 
     &-name {
@@ -81,6 +90,38 @@
         &:hover {
           opacity: 0.8;
         }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    &-text {
+      width: calc(100% / 3 - 0.8rem);
+    }
+    &-item {
+      width: calc(100% / 2 - 0.8rem);
+    }
+  }
+
+  @media (max-width: 600px) {
+    &-text {
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+    &-item {
+      width: calc(100% / 2 - 0.8rem);
+    }
+  }
+
+  @media (max-width: 414px) {
+    &-text {
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+    &-item {
+      width: 100%;
+      img {
+        width: 100%;
       }
     }
   }

@@ -4,7 +4,7 @@
   background-color: #f5f6f9;
 
   &-main {
-    @include flex(space-around);
+    @include flex(space-around, center, nowrap);
     text-align: center;
   }
 
@@ -30,6 +30,17 @@
       color: #888;
       font-size: 1.3rem;
       font-weight: 100;
+    }
+  }
+
+  @media (max-width: 600px) {
+    &-main {
+      @include flex(space-around, center, wrap);
+      gap: 4rem 0;
+    }
+
+    &-item {
+      width: calc(100% / 2);
     }
   }
 }

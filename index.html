@@ -7,8 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Suntech</title>
 
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- custom css -->
   <link rel="stylesheet" href="./assets/css/main.min.css">
+
+  <!-- js -->
+  <script src="./assets/js/main.js" defer></script>
 </head>
 
 <body>
@@ -34,18 +42,31 @@
           <a href="#">Accessories</a>
         </nav>
 
+        <nav class="header-nav-mobile">
+          <button class="btn btn-close-menu"><i class="fa-solid fa-circle-xmark"></i></button>
+          <div class="list-item">
+            <a href="#" class="nav-link-active">home</a>
+            <a href="#">women</a>
+            <a href="#">men</a>
+            <a href="#">kids</a>
+            <a href="#">jewellery</a>
+            <a href="#">Accessories</a>
+          </div>
+        </nav>
+        <div class="overlay" id="overlay"></div>
+
         <div class="header-right">
 
           <a href="#" class="header-right-item header-cart">
-            <img src="./assets/images/header/cart.png" alt="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
           </a>
 
           <a href="#" class="header-right-item">
-            <img src="./assets/images/header/search.png" alt="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
           </a>
 
-          <a href="#" class="header-right-item">
-            <img src="./assets/images/header/menu.png" alt="menu icon">
+          <a href="#" class="header-right-item header-menu-mobile">
+            <i class="fa-solid fa-bars"></i>
           </a>
 
         </div>

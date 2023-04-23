@@ -38,4 +38,26 @@
       font-size: 1.8rem;
     }
   }
+
+  @media (max-width: 768px) {
+    .product-item {
+      width: calc(100% / 3 - 1.6rem);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .product-item {
+      width: calc(100% / 2 - 1.6rem);
+    }
+  }
+
+  @media (max-width: 414px) {
+    .product-item {
+      width: 100%;
+
+      &-image img {
+        width: 100%;
+      }
+    }
+  }
 }

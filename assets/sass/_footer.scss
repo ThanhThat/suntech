@@ -16,8 +16,8 @@
   &-main {
     @include flex();
     position: absolute;
-    bottom: 50%;
-    transform: translateY(35%);
+    top: 50%;
+    transform: translateY(-60%);
     left: 0;
     right: 0;
     z-index: 1;
@@ -27,7 +27,8 @@
     width: 50%;
 
     &-right {
-      @include flex(space-around);
+      @include flex(space-around, center, nowrap);
+      gap: 1.6rem 0;
     }
   }
 
@@ -71,6 +72,109 @@
     &-card {
       @include flex;
       gap: 0 1rem;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    &-heading {
+      font-size: 2rem;
+    }
+
+    &-desc {
+      width: 80%;
+    }
+
+    &-form {
+      .form-control {
+        padding: 1rem 2rem;
+
+        width: 60%;
+      }
+    }
+
+    &-column {
+      &-right {
+        img {
+          width: 100%;
+        }
+      }
+
+      &-item {
+        width: 20%;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    &-background-left {
+      height: 36rem;
+    }
+    &-heading {
+      width: 100%;
+    }
+
+    &-desc {
+      width: 100%;
+    }
+
+    &-form {
+      padding: 0 1.6rem;
+      .form-control {
+        padding: 1rem 2rem;
+        width: 100%;
+      }
+    }
+
+    &-column {
+      padding-right: 1.6rem;
+      padding-left: 1.6rem;
+      &-right {
+        flex-wrap: wrap;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &-item {
+        width: 50%;
+        padding: 3.2rem;
+      }
+    }
+
+    &-bottom {
+      gap: 1.6rem 0;
+      padding: 1.6rem 0;
+      height: auto;
+    }
+  }
+
+  @media (max-width: 414px) {
+    &-background-left {
+      height: 30rem;
+      width: 100%;
+      margin-bottom: 0;
+    }
+    &-main {
+      // position: unset;
+      top: 50%;
+      transform: translateY(-70%);
+    }
+
+    &-column {
+      width: 100%;
+
+      &-right {
+        display: none;
+      }
+    }
+
+    &-bottom {
+      text-align: center;
+
+      &-copyright {
+        line-height: 1.5;
+      }
     }
   }
 }

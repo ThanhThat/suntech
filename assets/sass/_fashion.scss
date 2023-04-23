@@ -5,4 +5,10 @@
   .fashion-item {
     width: calc(100% / 3);
   }
+
+  @media (max-width: 414px) {
+    .fashion-item {
+      width: 100%;
+    }    
+  }
 }
