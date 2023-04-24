@@ -25,6 +25,7 @@
 
   &-column {
     width: 50%;
+    padding: 0 1.6rem;
 
     &-right {
       @include flex(space-around, center, nowrap);
@@ -58,6 +59,7 @@
       font-size: 1.4rem;
       color: #9c9c9a;
       width: 40rem;
+      border: none;
     }
   }
 
@@ -105,10 +107,13 @@
     }
   }
 
-  @media (max-width: 600px) {
-    &-background-left {
-      height: 36rem;
+  @media (max-width: 768px) {
+    &-form {
+      .form-control {
+        width: 100%;
+      }
     }
+
     &-heading {
       width: 100%;
     }
@@ -116,9 +121,14 @@
     &-desc {
       width: 100%;
     }
+  }
+
+  @media (max-width: 600px) {
+    &-background-left {
+      height: 36rem;
+    }
 
     &-form {
-      padding: 0 1.6rem;
       .form-control {
         padding: 1rem 2rem;
         width: 100%;
@@ -156,9 +166,8 @@
       margin-bottom: 0;
     }
     &-main {
-      // position: unset;
       top: 50%;
-      transform: translateY(-70%);
+      transform: translateY(-75%);
     }
 
     &-column {
