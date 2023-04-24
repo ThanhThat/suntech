@@ -67,6 +67,11 @@ a {
     margin-left: 0;
   }
 }
+@media (max-width: 768px) {
+  .btn.btn--submit {
+    width: 100%;
+  }
+}
 @media (max-width: 600px) {
   .btn.btn--submit {
     width: 100%;
@@ -87,6 +92,25 @@ a {
 }
 .btn.btn-close-menu:hover {
   color: #3cb878;
+}
+
+.btn.btn-menu-mobile {
+  background-color: transparent;
+  border: 1px solid #333333;
+  padding: 0.3rem 1rem;
+  font-size: 1.4rem;
+  border-radius: 4px;
+  font-weight: 600;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  will-change: border-color, color;
+}
+.btn.btn-menu-mobile:hover {
+  border-color: #3cb878;
+  color: #3cb878;
+}
+.btn.btn-menu-mobile i {
+  margin-left: 0.3rem;
 }
 
 .open-menu {
@@ -298,6 +322,12 @@ a {
   }
 }
 @media (max-width: 600px) {
+  .header-main {
+    padding: 2.6rem 0;
+  }
+  .header-logo {
+    font-size: 2rem;
+  }
   .header-nav-mobile {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -318,6 +348,18 @@ a {
     top: 0;
     right: 0;
     left: 30%;
+  }
+}
+@media (max-width: 414px) {
+  .header-logo {
+    font-size: 1.8rem;
+  }
+  .header-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1.6rem 0;
   }
 }
 
@@ -690,6 +732,7 @@ a {
 }
 .footer-column {
   width: 50%;
+  padding: 0 1.6rem;
 }
 .footer-column-right {
   display: -webkit-box;
@@ -728,6 +771,7 @@ a {
   font-size: 1.4rem;
   color: #9c9c9a;
   width: 40rem;
+  border: none;
 }
 .footer-bottom {
   height: 5rem;
@@ -775,9 +819,9 @@ a {
     width: 20%;
   }
 }
-@media (max-width: 600px) {
-  .footer-background-left {
-    height: 36rem;
+@media (max-width: 768px) {
+  .footer-form .form-control {
+    width: 100%;
   }
   .footer-heading {
     width: 100%;
@@ -785,8 +829,10 @@ a {
   .footer-desc {
     width: 100%;
   }
-  .footer-form {
-    padding: 0 1.6rem;
+}
+@media (max-width: 600px) {
+  .footer-background-left {
+    height: 36rem;
   }
   .footer-form .form-control {
     padding: 1rem 2rem;
@@ -821,8 +867,8 @@ a {
   }
   .footer-main {
     top: 50%;
-    -webkit-transform: translateY(-70%);
-            transform: translateY(-70%);
+    -webkit-transform: translateY(-75%);
+            transform: translateY(-75%);
   }
   .footer-column {
     width: 100%;
