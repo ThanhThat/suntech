@@ -774,8 +774,9 @@ a {
   border: none;
 }
 .footer-bottom {
-  height: 5rem;
+  height: auto;
   background-color: #000;
+  padding: 1.2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -786,6 +787,7 @@ a {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 8px;
 }
 .footer-bottom-copyright {
   color: #ffffff;
@@ -862,7 +864,7 @@ a {
     height: auto;
   }
 }
-@media (max-width: 414px) {
+@media (max-width: 576px) {
   .footer-background-left {
     display: none;
   }
@@ -875,6 +877,9 @@ a {
     -webkit-transform: none;
             transform: none;
     margin: 0 -1.6rem;
+  }
+  .footer-heading {
+    font-size: 2.6rem;
   }
   .footer-column {
     width: 100%;
